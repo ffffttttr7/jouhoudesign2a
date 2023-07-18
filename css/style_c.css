@@ -1,0 +1,172 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    max-height: 500px;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  #wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  header {
+    background: #161767;
+    color: #FFF;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+  }
+  
+
+  .navButton {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  
+  .navButton .material-symbols-rounded {
+    color: #FFF;
+    font-size: 2rem;
+  }
+  
+  nav {
+    position: relative;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(143, 139, 139, 0.7);
+    box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+  }
+  .menu li {
+    height: 3rem;
+    border-bottom: solid 1px #AAA;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  .menu a:hover {
+    background-color: rgba(243, 228, 29, 0.709);
+  }
+  
+.main-menu {
+  background: #333;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.main-menu ul {
+    display: flex;
+    justify-content: center;
+      
+  }
+  
+  .main-menu ul li a {
+    color: #FFF;
+    display: block;
+    padding: 10px 20px;
+  }
+  .main-menu ul li a:hover {
+    background: #222;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 1200px;
+  }
+section {
+  background: #EEE;
+  flex: 3;
+  padding: 20px;
+}
+article {
+  background: #FFF;
+  padding: 20px;
+  margin-bottom: 20px; 
+}
+img {
+  width: 50%;
+  height: auto;
+}
+aside {
+  background: #DDD;
+  flex: 1;
+}
+
+footer {
+  background: #161767;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+@media all and (min-width: 500px) {
+
+  #wrap {
+    width: 84%;
+  }
+
+  .main-menu ul {
+    display: flex;
+  }
+
+  .main-menu ul li {
+    text-align: left;
+  }
+
+  main {
+    display: flex;
+  }
+  
+  .sub-menu ul li {
+    text-align: left;
+  }
+
+}
+
+@media all and (min-width: 500px) {
+  .imglist{
+    display: flex;
+  }
+  
+  .imglist li{
+    margin: 5px;
+  }
+
+  #wrap {
+    width: 84%;
+    max-width: 1280px;
+  }
+ 
+}
+a.pagetop {
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #87CEFA;
+  color: #FFF;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}

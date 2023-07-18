@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+    // 画像・URLリストを配列で作る
+    var imglist = [
+       [ "images/02.jpg", "アマゾンlink", "https://amzn.asia/d/3bpBSwx" ] ,
+       [ "images/03.PNG", "アマゾンlink", "https://amzn.asia/d/9ZgLYuL" ] ,
+       [ "images/04.jpg", "アマゾンlink", "https://amzn.asia/d/8YHBZQy" ] ,
+       [ "images/05.PNG", "アマゾンlink", "https://amzn.asia/d/eHw3QAE" ] 
+    ];
+ 
+    // ランダムに1つ選んで表示する関数
+    function RandomImageLink() {
+       // どれか1つ選ぶ
+       var selectnum = Math.floor(Math.random() * imglist.length);
+       // 画像とリンクを生成
+       var output = 
+          '<a href="' + imglist[selectnum][2] + '">' +
+          '<img src="' + imglist[selectnum][0] + '"' +
+          ' alt="' + imglist[selectnum][1] + '"><br>' +
+          imglist[selectnum][1] + '</a>';
+       // 生成したHTMLを出力
+       document.write(output);
+    }
+   </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--コードがフォルダに入っている時は『フォルダ名／』-->
+  <title>WORKS</title>
+
+  <body>
+    <div id="wrap">
+        <header>
+            <h1>MyPortfolio</h1>
+            <div class="navButton">
+              <a href="#"><span class="material-symbols-rounded">menu</span></a>
+            </div>
+         </header>
+         <nav>
+            <ul class="menu">
+               <li><a href="index.html">TOP</a></li>
+               <li><a href="books.html">本の紹介</a></li>
+               <li><a href="about.html">このサイトについて</a></li>
+            </ul>
+         </nav>
+
+    <main>
+      <div class="box">
+        <p>
+           <script type="text/javascript">
+               RandomImageLink();
+           </script>
+        </p>
+        <noscript>
+           <p><a href="list.html">お勧めリストへ</a></p>
+        </noscript>
+     </div>
+
+      
+
+
+
+    </main>
+
+    <footer>
+      <p>&copy;22as025</p>
+</body>
+
+</html>
